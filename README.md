@@ -11,8 +11,7 @@ see if there are common deregulated proteins in different tissues from a mice af
 2) Convert from "UNIPROT" Accession to "SYMBOL", and export the list of common proteins
 
 GO-BP analysis
-1) create the object allGO2genes <- annFUN.org(whichOnto='BP', feasibleGenes = NULL,
-                         mapping="org.Hs.eg.db", ID = "entrez")
+1) create the object allGO2genes <- annFUN.org(whichOnto='BP', feasibleGenes = NULL, mapping="org.Hs.eg.db", ID = "entrez")
 2)Convert your accessions to gene "SYMBOL"
 3)Create a new deta.frame using only the columnsENTEREZID just converted and adding the column AdjPvalue from "ForRank_EXPERIMENT1" element
 4)create a named vector element using the tibble::deframe function
