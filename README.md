@@ -12,9 +12,9 @@ see if there are common deregulated proteins in different tissues from a mice af
 
 GO-BP analysis
 1) create the object allGO2genes <- annFUN.org(whichOnto='BP', feasibleGenes = NULL, mapping="org.Hs.eg.db", ID = "entrez")
-2)Convert your accessions to gene "SYMBOL"
-3)Create a new deta.frame using only the columnsENTEREZID just converted and adding the column AdjPvalue from "ForRank_EXPERIMENT1" element
-4)create a named vector element using the tibble::deframe function
-5)Run the GO analysis
-6)Export a file with your GOs and the KS values (best limit <0.05). You can use Revigo tools (http://revigo.irb.hr/) to create immages as treemaps, scatterplots, 
+2) Convert your accessions to gene "SYMBOL"
+3) Create a new deta.frame using only the columnsENTEREZID just converted and adding the column AdjPvalue from "ForRank_EXPERIMENT1" element
+4) create a named vector element using the tibble::deframe function
+5) Run the GO analysis
+6) Export a file with your GOs and the KS values (best limit <0.05). You can use Revigo tools (http://revigo.irb.hr/) to create immages as treemaps, scatterplots, 
 and Cytoscape-compatible (https://cytoscape.org/) plots.
